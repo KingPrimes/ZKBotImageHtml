@@ -3,11 +3,7 @@
     margin: 0;
     /* font-family: math; */
     word-spacing: 5px;
-}
-
-td {
-    align-items: center;
-    text-indent: 25px;
+    text-align: center;
 }
 
 h1 {
@@ -29,6 +25,7 @@ h3 {
 }
 
 td {
+    text-align: center;
     font-weight: bold;
 }
 
@@ -66,6 +63,33 @@ td {
     color: #591A1C;
 }
 
+.nighTwave{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nighTwave h3{
+    color: #12AA9C;
+    margin-top: 20px;
+}
+
+.nighTwave .day{
+    color: rgb(171, 105, 0);
+}
+
+.nighTwave .week{
+    color: rgb(46, 112, 167);
+}
+
+.nighTwave .elite{
+    color: rgb(250, 192, 0);
+}
+
+.invasions td,th,td{
+    align-items: center;
+    text-indent: 25px;
+}
+
 
 .card {
     width: fit-content;
@@ -100,4 +124,66 @@ td {
     margin: 0 auto;
     text-align: center;
     color: #555;
+}
+
+.voidTrader{
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.voidTrader thead,th{
+   /*  width: 100%; */
+    text-align: center;
+    background-color: #CCE8EB;
+    border: 1px solid #cad9ea;
+}
+
+.voidTrader tr:nth-child(odd) {
+    background: #fff;
+}
+.voidTrader td:nth-child(1) {
+    color: #cf62f0;
+}
+
+.voidTrader tr:nth-child(even){
+    background: #F5FAFA;
+}
+.voidTrader td:nth-child(2) {
+    color: #2da7ee;
+    background-image: url(../img/Credits.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.voidTrader td:nth-child(3) {
+    color: #B29C66;
+    background-image: url(../img/Ducats.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.table-css{
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table-css thead,th{
+    background-color: #CCE8EB;
+    border: 1px solid #cad9ea;
+}
+.tra{
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 10px 10px;
+}
+.tra td{
+    text-align: center;
+}
+
+.tra tr:nth-child(odd){
+    background: #dfebec;
+}
+.tra tr:nth-child(even){
+    background: #F5FAFA;
 }
