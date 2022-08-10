@@ -19,9 +19,13 @@ h3 {
     text-align: center;
 }
 
-.cycle {
+.cycleTime{
     text-indent: 35%;
-    font-weight: bold;
+}
+
+.cycle table{
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 td {
@@ -29,6 +33,15 @@ td {
     font-weight: bold;
 }
 
+.arbitration table{
+    width: 100%;
+}
+.daily table{
+    width: 100%;
+}
+.steePath table{
+    width: 100%;
+}
 .assault table tr{
     display: block;
     margin: 3px 0;
@@ -38,6 +51,10 @@ td {
     margin: 0 auto;
     text-align: center;
     
+}
+.fissues table{
+    margin-right: auto;
+    margin-left: auto;
 }
 .fissues h3{
     color: #12AA9C;
@@ -85,7 +102,7 @@ td {
     color: rgb(250, 192, 0);
 }
 
-.invasions td,th,td{
+.invasions td th td{
     align-items: center;
     text-indent: 25px;
 }
@@ -111,15 +128,6 @@ td {
     border-radius: 20px;
 }
 
-.table-s {
-    text-align: left;
-    width: 100%;
-}
-
-.table-s td {
-    border: 10px;
-}
-
 .auto {
     margin: 0 auto;
     text-align: center;
@@ -132,8 +140,7 @@ td {
     border-collapse: collapse;
 }
 
-.voidTrader thead,th{
-   /*  width: 100%; */
+.voidTrader th{
     text-align: center;
     background-color: #CCE8EB;
     border: 1px solid #cad9ea;
@@ -163,12 +170,13 @@ td {
 }
 
 .table-css{
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
 }
 
-.table-css thead,th{
+.table-css th{
     background-color: #CCE8EB;
     border: 1px solid #cad9ea;
 }
@@ -186,4 +194,58 @@ td {
 }
 .tra tr:nth-child(even){
     background: #F5FAFA;
+}
+
+.market td:nth-child(3){
+    background-image: url(../img/PlatinumLarge.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    color: rgb(14, 176, 201);
+}
+
+.market td:nth-child(1){
+    color: rgb(252, 99, 21);
+}
+
+.market td:nth-child(2){
+    color: rgb(46, 112, 167);
+}
+
+.market tr:nth-child(odd){
+    background: #dfebec;
+}
+.market tr:nth-child(even){
+    background: #F5FAFA;
+}
+
+.market p{
+    width: 100%;
+    text-indent: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.market div{
+    margin-top: 20px;
+}
+
+.las div{
+    margin-top: 20px;
+}
+
+.las td:nth-child(1){
+    color: rgb(252, 99, 21);
+}
+.las table{
+    border-collapse:collapse;
+    padding: 0;
+}
+
+.las tr:nth-child(odd){
+    background: #dfebec;
+    border: 2px solid #ccc;
+}
+.las tr:nth-child(even){
+    background: #F5FAFA;
+    border: 2px solid #ccc;
 }

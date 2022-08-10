@@ -15,9 +15,9 @@
 <div>
     <div class="card">
         <div class="card-layer">
-            <div>
+            <div class="daily">
 
-                <h1 style="text-align: center;">---本次特惠查询结果---</h1>
+                <h1>---本次特惠查询结果---</h1>
                 <!-- 数据关键字 -->
                 <!-- #table -->
 
@@ -25,27 +25,41 @@
                 <table>
                     <tr>
                         <td>
-                            物品名称：#Item
+                            物品名称：
+                        </td>
+                        <td>#Item</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            原价/现价：
+                        </td>
+                        <td>
+                            #Origin/#Sale
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            原价/现价：#Origin/#Sale
+                            折扣比：
+                        </td>
+                        <td>
+                            #Discount
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            折扣比：#Discount
+                            总/余：
+                        </td>
+                        <td>
+                            #Total/#Sold
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            总/余：#Total/#Sold
+                            剩余时间：
                         </td>
-                    </tr>
-                    <tr>
                         <td>
-                            剩余时间：<span style="text-align: center;">#End</span>
+                            #End
                         </td>
                     </tr>
                 </table>
