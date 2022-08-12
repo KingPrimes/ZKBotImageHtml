@@ -127,9 +127,7 @@ td {
 .card-layer {
     position: relative;
     border-radius: 20px;
-    border: 10px;
-    border-style: double;
-    border-color: #555;
+    border: 10px double #555;
     margin: 10px;
 }
 
@@ -148,6 +146,18 @@ td {
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
+}
+
+.voidTraderOut {
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.voidTraderOut td:nth-child(1){
+    color: #cf62f0;
+}
+.voidTraderOut td:nth-child(2){
+    color: #2da7ee;
 }
 
 .voidTrader th {
@@ -172,14 +182,14 @@ td {
     color: #2da7ee;
     background-image: url(../img/Credits.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
 }
 
 .voidTrader td:nth-child(3) {
     color: #B29C66;
     background-image: url(../img/Ducats.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
 }
 
 .table-css {
@@ -300,3 +310,24 @@ td {
     background-repeat: no-repeat;
     background-position: center;
 }
+.marketDumps table{
+    margin-bottom: 20px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+.marketDumps caption{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.marketDumps table:nth-child(1) td{
+    color: #E6BE8A;
+}
+
+.marketDumps table:nth-child(2) td{
+    color: #C0C0C0;
+}
+.marketDumps{
+   background-color: #F8EBBC;
+}
+
