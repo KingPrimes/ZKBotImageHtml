@@ -19,11 +19,11 @@ h3 {
     text-align: center;
 }
 
-.cycleTime{
+.cycleTime {
     text-indent: 35%;
 }
 
-.cycle table{
+.cycle table {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -33,76 +33,86 @@ td {
     font-weight: bold;
 }
 
-.arbitration table{
+.arbitration table {
     width: 100%;
 }
-.daily table{
+
+.daily table {
     width: 100%;
 }
-.steePath table{
+
+.steePath table {
     width: 100%;
 }
-.assault table tr{
+
+.assault table tr {
     display: block;
     margin: 3px 0;
 }
 
-.fissues{
+.fissues {
     margin: 0 auto;
     text-align: center;
-    
+
 }
-.fissues table{
+
+.fissues table {
     margin-right: auto;
     margin-left: auto;
 }
-.fissues h3{
+
+.fissues h3 {
     color: #12AA9C;
 }
-.fissues .t1{
+
+.fissues .t1 {
     margin-bottom: 20px;
     color: #BBAA9D;
 }
-.fissues .t2{
+
+.fissues .t2 {
     margin-bottom: 20px;
     color: #A9A992;
 }
-.fissues .t3{
+
+.fissues .t3 {
     margin-bottom: 20px;
     color: #AFAFAF;
 }
-.fissues .t4{
+
+.fissues .t4 {
     margin-bottom: 20px;
     color: #B29C66;
 }
-.fissues .t5{
+
+.fissues .t5 {
     margin-bottom: 20px;
     color: #591A1C;
 }
 
-.nighTwave{
+.nighTwave {
     margin: 0 auto;
     text-align: center;
 }
 
-.nighTwave h3{
+.nighTwave h3 {
     color: #12AA9C;
     margin-top: 20px;
 }
 
-.nighTwave .day{
+.nighTwave .day {
     color: rgb(171, 105, 0);
 }
 
-.nighTwave .week{
+.nighTwave .week {
     color: rgb(46, 112, 167);
 }
 
-.nighTwave .elite{
+.nighTwave .elite {
     color: rgb(250, 192, 0);
 }
 
-.invasions td th td{
+.invasions td th td {
     align-items: center;
     text-indent: 25px;
 }
@@ -134,13 +144,13 @@ td {
     color: #555;
 }
 
-.voidTrader{
+.voidTrader {
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
 }
 
-.voidTrader th{
+.voidTrader th {
     text-align: center;
     background-color: #CCE8EB;
     border: 1px solid #cad9ea;
@@ -149,19 +159,22 @@ td {
 .voidTrader tr:nth-child(odd) {
     background: #fff;
 }
+
 .voidTrader td:nth-child(1) {
     color: #cf62f0;
 }
 
-.voidTrader tr:nth-child(even){
+.voidTrader tr:nth-child(even) {
     background: #F5FAFA;
 }
+
 .voidTrader td:nth-child(2) {
     color: #2da7ee;
     background-image: url(../img/Credits.png);
     background-repeat: no-repeat;
     background-position: right;
 }
+
 .voidTrader td:nth-child(3) {
     color: #B29C66;
     background-image: url(../img/Ducats.png);
@@ -169,112 +182,120 @@ td {
     background-position: right;
 }
 
-.table-css{
+.table-css {
     width: 100%;
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
 }
 
-.table-css th{
+.table-css th {
     background-color: #CCE8EB;
     border: 1px solid #cad9ea;
 }
-.tra{
+
+.tra {
     margin: 0 auto;
     text-align: center;
     border-spacing: 10px 10px;
 }
-.tra td{
+
+.tra td {
     text-align: center;
 }
 
-.tra tr:nth-child(odd){
+.tra tr:nth-child(odd) {
     background: #dfebec;
 }
-.tra tr:nth-child(even){
+
+.tra tr:nth-child(even) {
     background: #F5FAFA;
 }
 
-.market td:nth-child(3){
+.market td:nth-child(3) {
     background-image: url(../img/PlatinumLarge.png);
     background-repeat: no-repeat;
     background-position: right;
     color: rgb(14, 176, 201);
 }
 
-.market td:nth-child(1){
+.market td:nth-child(1) {
     color: rgb(252, 99, 21);
 }
 
-.market td:nth-child(2){
+.market td:nth-child(2) {
     color: rgb(46, 112, 167);
 }
 
-.market tr:nth-child(odd){
+.market tr:nth-child(odd) {
     background: #dfebec;
 }
-.market tr:nth-child(even){
+
+.market tr:nth-child(even) {
     background: #F5FAFA;
 }
 
-.market p{
+.market p {
     width: 100%;
     text-indent: 20px;
     word-wrap: break-word;
     word-break: break-all;
 }
 
-.market div{
+.market div {
     margin-top: 20px;
 }
 
-.las div{
+.las div {
     margin-top: 20px;
 }
 
-.las td:nth-child(1){
+.las td:nth-child(1) {
     color: rgb(252, 99, 21);
 }
-.las table{
-    border-collapse:collapse;
+
+.las table {
+    border-collapse: collapse;
     padding: 0;
 }
 
-.las tr:nth-child(odd){
+.las tr:nth-child(odd) {
     background: #dfebec;
     border: 2px solid #ccc;
 }
-.las tr:nth-child(even){
+
+.las tr:nth-child(even) {
     background: #F5FAFA;
     border: 2px solid #ccc;
 }
 
-.riven{
-    border-collapse:separate ;
-    border-spacing: 10px 10px;    
+.riven {
+    border-collapse: separate;
+    border-spacing: 10px 10px;
 }
 
-.riven td{
+.riven td {
     width: 1%;
 }
 
-.riven tr{
+.riven tr {
     background: #edeff0;
 }
 
 
-.naramon{
+.naramon {
     background-image: url(../img/Naramon.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.madurai{
+
+.madurai {
     background-image: url(../img/Madurai.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-.vazarin{
+
+.vazarin {
     background-image: url(../img/Vazarin.png);
     background-repeat: no-repeat;
     background-position: center;
