@@ -184,14 +184,14 @@ td {
     color: #2da7ee;
     background-image: url(../img/Credits.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right;
 }
 
 .voidTrader td:nth-child(3) {
     color: #B29C66;
     background-image: url(../img/Ducats.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right;
 }
 
 .table-css {
