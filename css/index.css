@@ -249,3 +249,33 @@ td {
     background: #F5FAFA;
     border: 2px solid #ccc;
 }
+
+.riven{
+    border-collapse:separate ;
+    border-spacing: 10px 10px;    
+}
+
+.riven td{
+    width: 1%;
+}
+
+.riven tr{
+    background: #edeff0;
+}
+
+
+.naramon{
+    background-image: url(../img/Naramon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.madurai{
+    background-image: url(../img/Madurai.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vazarin{
+    background-image: url(../img/Vazarin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
