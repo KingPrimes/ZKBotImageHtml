@@ -146,6 +146,8 @@ td {
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
+    width: 100%;
+    text-indent: 20px;
 }
 
 .voidTraderOut {
