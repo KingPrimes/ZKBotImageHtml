@@ -155,10 +155,12 @@ td {
     text-align: center;
     border-collapse: collapse;
 }
-.voidTraderOut td:nth-child(1){
+
+.voidTraderOut td:nth-child(1) {
     color: #cf62f0;
 }
-.voidTraderOut td:nth-child(2){
+
+.voidTraderOut td:nth-child(2) {
     color: #2da7ee;
 }
 
@@ -312,24 +314,63 @@ td {
     background-repeat: no-repeat;
     background-position: center;
 }
-.marketDumps table{
+
+.marketDumps table {
     margin-bottom: 20px;
     border-collapse: separate;
     border-spacing: 10px;
 }
-.marketDumps caption{
+
+.marketDumps caption {
     font-weight: bold;
     font-size: 24px;
 }
 
-.marketDumps table:nth-child(1) td{
+.marketDumps table:nth-child(1) td {
     color: #E6BE8A;
 }
 
-.marketDumps table:nth-child(2) td{
+.marketDumps table:nth-child(2) td {
     color: #C0C0C0;
 }
-.marketDumps{
-   background-color: #F8EBBC;
+
+.marketDumps {
+    background-color: #F8EBBC;
 }
 
+.bounty5 {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+}
+
+.bounty5_1 {
+    /* display: inline-block; */
+    width: 200px;
+}
+
+.bounty5_1 ul li {
+    list-style: none;
+}
+
+.rel {
+    display: inline-block;
+    height: 100%;
+}
+
+.rel img {
+    width: 150px;
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+
+.reward {
+    font-size: 25px;
+    display: inline-block;
+
+}
+
+.relreward {
+    margin: 0 auto;
+    text-align: center;
+}
