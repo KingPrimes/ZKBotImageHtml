@@ -338,39 +338,55 @@ td {
     background-color: #F8EBBC;
 }
 
-.bounty5 {
-    width: 100px;
-    height: 50px;
-    display: inline-block;
-}
-
-.bounty5_1 {
-    /* display: inline-block; */
-    width: 200px;
-}
-
-.bounty5_1 ul li {
-    list-style: none;
-}
-
 .rel {
     display: inline-block;
     height: 100%;
+    /*background-image: url("../img/axirel.png");*/
 }
 
-.rel img {
-    width: 150px;
-    margin-bottom: 70px;
-    margin-top: 10px;
+.syndicate {
+    border-collapse: separate;
+    border-spacing: 10px 10px;
 }
 
-.reward {
-    font-size: 25px;
-    display: inline-block;
-
+.syndicate-1 p{
+    background-color: beige;
+}
+.syndicate-2 p {
+    background-color: azure;
+}
+.syndicate-3 p {
+    background-color: beige;
+}
+.syndicate-4 p{
+    background-color: azure;
+}
+.syndicate-5 p{
+    background-color: azure;
+}
+.syndicate-6 p{
+    background-color: beige;
+}
+.syndicate-7 p{
+    background-color: azure;
+}
+.syndicate-8 p{
+    background-color: beige;
 }
 
-.relreward {
-    margin: 0 auto;
-    text-align: center;
+/*后纪*/
+.relics-axi {
+    background-image: url("../img/axirel.png");
+}
+/*古纪*/
+.relics-lith {
+
+}
+/*前纪*/
+.relics-meso{
+
+}
+/*中纪*/
+.relics-neo{
+
 }
