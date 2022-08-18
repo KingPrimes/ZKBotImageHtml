@@ -375,18 +375,72 @@ td {
 }
 
 /*后纪*/
-.relics-axi {
-    background-image: url("../img/axirel.png");
+.relics-Axi {
+    background-image: url("../img/axi.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 /*古纪*/
-.relics-lith {
-
+.relics-Lith {
+    background-image: url("../img/lith.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 /*前纪*/
-.relics-meso{
-
+.relics-Meso{
+    background-image: url("../img/meso.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 /*中纪*/
-.relics-neo{
-
+.relics-Neo{
+    background-image: url("../img/neo.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+.relics {
+    width: 100%;
+}
+
+.relics tr:nth-child(-n+3):nth-child(n+1){
+    color: #E6BE8A;
+}
+.relics tr:nth-child(4){
+    color: #B29C66;
+}
+
+.relics tr:nth-child(-n+6):nth-child(n+5){
+    color: #C0C0C0;
+}
+
+.relics tr:nth-child(7){
+    color: #C0C0C0;
+}
+
+.relics-t{
+    color: #E6BE8A;
+}
+.relics-y{
+    color: #C0C0C0;
+}
+.relics-j{
+    color: #B29C66;
+}
+
+.relics-color td:nth-child(even){
+    background-color: #61649c;
+}
+
+.relics-backcolor{
+    position: relative;
+    border-radius: 20px;
+    border: 10px double #ccccd6;
+    margin: 10px;
+    background-color: #61649f;
+}
+
