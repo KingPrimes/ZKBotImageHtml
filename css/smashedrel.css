@@ -1,0 +1,67 @@
+.market2 {
+    background-color: #28da3d;
+}
+
+.market2 td:nth-child(1) {
+    color: rgb(252, 99, 21);
+}
+
+.market2 td:nth-child(2) {
+    color: rgb(46, 112, 167);
+}
+
+.market2 tr:nth-child(odd) {
+    background: #dfebec;
+}
+
+.market2 tr:nth-child(even) {
+    background: #F5FAFA;
+}
+
+.market2 tr td:nth-child(1) {
+    color: red;
+}
+
+.market2 tr td:nth-child(2) {
+    color: blue;
+}
+
+.market2 tr td:nth-child(3) {
+    color: rgb(234, 84, 29);
+}
+
+.market2 tr td:nth-child(4) {
+    color: rgb(251, 0, 255);
+}
+
+.market2 tr:nth-child(3) {
+    background-color: rgba(165, 82, 225, 0.388);
+    font-size: 18px;
+    opacity: 0.5;
+    color: rgb(251, 0, 255);
+
+}
+
+.market2 tr:nth-child(1) td {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-image: url(../img/axirel.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.market2 tr:nth-child(1) td p {
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+
+.market2 tr:nth-child(2) {
+    font-size: 20px;
+    background-color: #eeb268;
+}

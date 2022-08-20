@@ -334,42 +334,6 @@ td {
     color: #C0C0C0;
 }
 
-.market2 {
-    background-color: #F8EBBC;
-}
-
-.market2 td:nth-child(1) {
-    color: rgb(252, 99, 21);
-}
-
-.market2 td:nth-child(2) {
-    color: rgb(46, 112, 167);
-}
-
-.market2 tr:nth-child(odd) {
-    background: #dfebec;
-}
-
-.market2 tr:nth-child(even) {
-    background: #F5FAFA;
-}
-
-.market2 tr td:nth-child(1) {
-    color: red;
-}
-
-.market2 tr td:nth-child(2) {
-    color: blue;
-}
-
-.market2 tr td:nth-child(3) {
-    color: rgb(0, 255, 4);
-}
-
-.market2 tr td:nth-child(4) {
-    color: rgb(251, 0, 255);
-}
-
 
 .marketDumps {
     background-color: #F8EBBC;
