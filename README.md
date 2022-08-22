@@ -37,7 +37,23 @@
 ---
 - 非常感谢 `别哭草莓菠菜^ ^ 微信号：Xwenlilililili_` 绘制的图像
 <!-- readme: collaborators,contributors -start -->
-
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/KingPrimes">
+            <img src="https://avatars.githubusercontent.com/u/50130875?v=4" width="100;" alt="KingPrimes"/>
+            <br />
+            <sub><b>KingPrimes</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/fbbDirge">
+            <img src="https://avatars.githubusercontent.com/u/86771432?v=4" width="100;" alt="fbbDirge"/>
+            <br />
+            <sub><b>Darling</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: collaborators,contributors -end -->
 
 
