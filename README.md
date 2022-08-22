@@ -12,9 +12,9 @@
 
 <div>
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/KingPrimes/ZKBotImageHtml?style=plastic)](https://github.com/KingPrimes/ZKBotImageHtml)
-[![GitHub forks](https://img.shields.io/github/forks/KingPrimes/ZKBotImageHtml?style=plastic)](https://github.com/KingPrimes/ZKBotImageHtml)
-
+[![GitHub Repo stars](https://img.shields.io/github/stars/KingPrimes/ZKBotImageHtml?style=social)](https://github.com/KingPrimes/ZKBotImageHtml)
+[![GitHub forks](https://img.shields.io/github/forks/KingPrimes/ZKBotImageHtml?style=social)](https://github.com/KingPrimes/ZKBotImageHtml)
+[![QQ Group](https://img.shields.io/badge/QQ%20Group-260079469-blue)](https://jq.qq.com/?_wv=1027&k=RgqgJLij)
 </div>
 
 项目部署
