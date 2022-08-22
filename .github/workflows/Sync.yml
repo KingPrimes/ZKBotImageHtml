@@ -24,4 +24,4 @@ jobs:
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: git@github.com:KingPrimes/ZKBotImageHtml.git
           # 注意替换为你的 GitCode 目标仓库地址
-          destination-repo: git@gitcode.net:KingPrimes/ZKBotImageHtml.git
+          destination-repo: git@gitcode.net:KingPrimes/ZeroKingBotHtml.git
