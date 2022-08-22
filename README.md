@@ -12,12 +12,8 @@
 
 <div>
 
-[![Contributes](https://github.com/KingPrimes/ZKBotImageHtml/actions/workflows/reademe-contributors.yml/badge.svg?event=status)](https://github.com/KingPrimes/ZKBotImageHtml/actions/workflows/reademe-contributors.yml)
-[![Java CI Package](https://github.com/KingPrimes/ZeroKingBot/actions/workflows/release.yml/badge.svg)](https://github.com/KingPrimes/ZeroKingBot/actions/workflows/release.yml)
-[![Contributes](https://github.com/KingPrimes/ZKBotImageHtml/actions/workflows/reademe-contributors.yml/badge.svg?event=fork)](https://github.com/KingPrimes/ZKBotImageHtml/actions/workflows/reademe-contributors.yml)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![GitHub Repo stars](https://img.shields.io/github/stars/KingPrimes/ZKBotImageHtml?style=plastic)](https://github.com/KingPrimes/ZKBotImageHtml)
+[![GitHub forks](https://img.shields.io/github/forks/KingPrimes/ZKBotImageHtml?style=plastic)](https://github.com/KingPrimes/ZKBotImageHtml)
 
 </div>
 
@@ -32,10 +28,9 @@
 - [腾讯云优惠](https://cloud.tencent.com/act/pro/cps_3?fromSource=gwzcw.6688284.6688284.6688284&cps_key=ae3b8b6e55495d8bc53f2227ea0273d8)
 - [腾讯云免费体验](https://cloud.tencent.com/act/free)
 
-贡献者
+贡献者 ✨
 ---
----
-- 非常感谢 `别哭草莓菠菜^ ^ 微信号：Xwenlilililili_` 绘制的图像
+--- 
 <!-- readme: collaborators,contributors -start -->
 <table>
 <tr>
@@ -56,28 +51,7 @@
 </table>
 <!-- readme: collaborators,contributors -end -->
 
-
 赞助作者
 ---
 ---
 <img src=".github/image/upA-W.png" width="500"/>
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/fbbDirge"><img src="https://avatars.githubusercontent.com/u/86771432?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Darling</b></sub></a><br /><a href="#data-fbbDirge" title="Data">🔣</a> <a href="#projectManagement-fbbDirge" title="Project Management">📆</a> <a href="https://github.com/KingPrimes/ZKBotImageHtml/commits?author=fbbDirge" title="Tests">⚠️</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
