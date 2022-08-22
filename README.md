@@ -1,7 +1,4 @@
 <div align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <p align="center">
    <img src=".github/image/ico.jpg" width="200" height="200" alt="非常感谢 `别哭草莓菠菜^ ^ 微信号：Xwenlilililili_` 绘制的图像" title="非常感谢 `别哭草莓菠菜^ ^ 微信号：Xwenlilililili_` 绘制的图像">
@@ -11,8 +8,17 @@
 
 <p>此库是ZeroKingBot自定义图片渲染库</p>
 <p>需要配合ZeroKingBot使用</p>
+</div>
 
+<div>
+
+[![Contributes](https://github.com/KingPrimes/ZKBotImageHtml/actions/workflows/reademe-contributors.yml/badge.svg?event=status)](https://github.com/KingPrimes/ZKBotImageHtml/actions/workflows/reademe-contributors.yml)
 [![Java CI Package](https://github.com/KingPrimes/ZeroKingBot/actions/workflows/release.yml/badge.svg)](https://github.com/KingPrimes/ZeroKingBot/actions/workflows/release.yml)
+[![Contributes](https://github.com/KingPrimes/ZKBotImageHtml/actions/workflows/reademe-contributors.yml/badge.svg?event=fork)](https://github.com/KingPrimes/ZKBotImageHtml/actions/workflows/reademe-contributors.yml)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 </div>
 
 项目部署
@@ -31,7 +37,9 @@
 ---
 - 非常感谢 `别哭草莓菠菜^ ^ 微信号：Xwenlilililili_` 绘制的图像
 <!-- readme: collaborators,contributors -start -->
+
 <!-- readme: collaborators,contributors -end -->
+
 
 赞助作者
 ---

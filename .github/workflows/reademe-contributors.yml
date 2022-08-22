@@ -1,9 +1,9 @@
+name: Contributes
+
 on:
   push:
     branches:
-      - master
-
-name: Contributes
+      - main
 
 jobs:
   # 任务
@@ -14,4 +14,4 @@ jobs:
       - name: Contribute List
         uses: akhilmhdh/contributors-readme-action@v2.3.4
         env:
-          GITHUB_TOKEN: ${{ secrets.CONTRIBUTORS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
