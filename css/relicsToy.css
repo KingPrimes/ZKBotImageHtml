@@ -1,0 +1,49 @@
+.global-style {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+
+.relics-toy {
+    background-color: rgba(184, 236, 232, 0.2);
+}
+
+.relics-layer {
+    position: relative;
+    border-radius: 20px;
+    border: 10px double #555;
+    margin: 10px;
+}
+
+.global-style div{
+    margin: 10px;
+}
+
+.relics-toy-t{
+    color: rgb(185,133,112);
+    border: solid rgba(230, 190, 138, 0.4);
+    border-top-width: 20px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    background-color: rgba(230, 190, 138, 0.2);
+}
+
+.relics-toy-y{
+    color: rgb(192, 192, 192);
+    border: solid rgba(192, 192, 192, 0.4);
+    border-top-width: 20px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    background-color: rgba(192, 192, 192, 0.2);
+}
+.relics-toy-j{
+    color: rgb(240,223,181);
+    border: solid rgba(178, 156, 102, 0.4);
+    border-top-width: 20px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    background-color: rgba(178, 156, 102, 0.2);
+}
