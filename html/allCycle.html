@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8"/>
@@ -9,8 +9,14 @@
 
 <body>
 <!-- 图片的宽度 按像素计算 -->
-<w>430</w>
+<w>1290</w>
 <div>
+	<script>
+		var earthType = document.getElementById("earthType");
+		if(earthType.value==="白天"){
+			earthType.style.color = 'red'
+		}
+	</script>
     <div class="card">
         <div class="card-layer">
             <div class="cycle">
@@ -22,8 +28,9 @@
                 <h3>---地球---</h3>
                 <table>
                     <tr>
+						
                         <td>状态</td>
-                        <td>#earthType</td>
+                        <td id="earthType">#earthType</td>
                     </tr>
                     <tr>
                         <td>时间</td>
