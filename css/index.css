@@ -1,4 +1,4 @@
-* {
+html {
     padding: 0;
     margin: 0;
     font-family: 'Source', Fallback,sans-serif;
@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: 'Source';
-    src: url("./ttf/SourceHanSerifSC-VF.otf.woff2");
+    src: url("./ttf/SourceHanSerifCN-Bold.otf");
 }
 
 h1 {

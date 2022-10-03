@@ -1,201 +1,203 @@
 @font-face {
-				font-family: 'Source';
-				src: url("./ttf/SourceHanSerifSC-VF.otf.woff2");
-			}
+    font-family: 'Source';
+    src: url("./ttf/SourceHanSerifCN-Bold.otf");
+}
 
-			#warframe_react,
-			#warframe_react>section,
-			body,
-			html {
-				font-family: 'Source', Fallback, sans-serif;
-				font-size: 14px
-			}
+#warframe_react,
+#warframe_react > section,
+body,
+html {
+    font-family: 'Source', Fallback, sans-serif;
+    font-size: 14px
+}
 
-			.content__header--transparent--lrTCI {
-				z-index: 10;
-				background-color: #454C4E;
-				color: #aab3b6
-			}
+.content__header--transparent--lrTCI {
+    z-index: 10;
+    background-color: #454C4E;
+    color: #aab3b6
+}
 
-			.content__header--transparent--lrTCI h1 {
-				color: #f5f5f5 !important
-			}
+.content__header--transparent--lrTCI h1 {
+    color: #f5f5f5 !important
+}
 
-			.content__header--transparent--lrTCI h2,
-			.content__header--transparent--lrTCI h3,
-			.content__header--transparent--lrTCI h4 {
-				color: #c5c7c8
-			}
+.content__header--transparent--lrTCI h2,
+.content__header--transparent--lrTCI h3,
+.content__header--transparent--lrTCI h4 {
+    color: #c5c7c8
+}
 
-			.content__header--transparent--lrTCI .link,
-			.content__header--transparent--lrTCI .tooltip {
-				color: #3c879c
-			}
+.content__header--transparent--lrTCI .link,
+.content__header--transparent--lrTCI .tooltip {
+    color: #3c879c
+}
 
-			.content__header--transparent--lrTCI .link:hover,
-			.content__header--transparent--lrTCI .tooltip:hover {
-				color: #5ff5ff
-			}
+.content__header--transparent--lrTCI .link:hover,
+.content__header--transparent--lrTCI .tooltip:hover {
+    color: #5ff5ff
+}
 
-			.content__header--transparent--lrTCI .link:focus,
-			.content__header--transparent--lrTCI .tooltip:focus {
-				color: #1bb194
-			}
+.content__header--transparent--lrTCI .link:focus,
+.content__header--transparent--lrTCI .tooltip:focus {
+    color: #1bb194
+}
 
-			.content__header--transparent--lrTCI .header__primary--mq4Zq {
-				min-height: 120px;
-				display: flex;
-			}
+.content__header--transparent--lrTCI .header__primary--mq4Zq {
+    min-height: 120px;
+    display: flex;
+}
 
-			.content__header--transparent--lrTCI .header__primary--mq4Zq h1 {
-				margin-bottom: 0
-			}
+.content__header--transparent--lrTCI .header__primary--mq4Zq h1 {
+    margin-bottom: 0
+}
 
-			.content__header--transparent--lrTCI .header__primary--mq4Zq .wfm-icon {
-				width: 30px;
-				height: auto;
-				fill: #f5f5f5;
-				margin-right: 20px
-			}
+.content__header--transparent--lrTCI .header__primary--mq4Zq .wfm-icon {
+    width: 30px;
+    height: auto;
+    fill: #f5f5f5;
+    margin-right: 20px
+}
 
-			.riven_mod {
-				color: #6824b5
-			}
+.riven_mod {
+    color: #6824b5
+}
 
-			.legendary_mod {
-				color: #d32ce6
-			}
+.legendary_mod {
+    color: #d32ce6
+}
 
-			.rare_mod {
-				color: #4b69ff
-			}
+.rare_mod {
+    color: #4b69ff
+}
 
-			.uncommon_mod {
-				color: #5e98d9
-			}
+.uncommon_mod {
+    color: #5e98d9
+}
 
-			.common_mod {
-				color: #b0c3d9
-			}
+.common_mod {
+    color: #b0c3d9
+}
 
-			.archon_mod {
-				color: #ff6129
-			}
+.archon_mod {
+    color: #ff6129
+}
 
-			.header {
-				width: 100%;
-				border-collapse: collapse;
-				table-layout: fixed;
-			}
+.header {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
 
-			.header th {
-				height: 40px;
-				background-color: #fff;
-				vertical-align: top;
-				text-align: center;
-			}
-			
-			.header td {
-				font-size: 18px;
-			}
-			
-		
+.header th {
+    height: 40px;
+    background-color: #fff;
+    vertical-align: top;
+    text-align: center;
+}
 
-			.nav {
+.header td {
+    font-size: 18px;
+}
 
-				padding-left: 0;
-				margin-bottom: 0;
-				display: block;
-				overflow: hidden;
-				white-space: nowrap;
 
-			}
+.nav {
 
-			.nav_li {
-				list-style: none;
-				display: inline-block;
-				width: 90px;
-				height: 27px;
-				color: #f5f5f5;
-				background-color: #265663;
-				text-align: center;
-				font-size: 18px;
-			}
+    padding-left: 0;
+    margin-bottom: 0;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
 
-			.actv_li {
-				list-style: none;
-				display: inline-block;
-				width: 90px;
-				height: 27px;
-				color: #f5f5f5;
-				background-color: #19a187;
-				text-align: center;
-				font-size: 18px;
-			}
+}
 
-			.tableList {
-				margin-top: 20px;
-				background-color: #f5f5f5;
-			}
+.nav_li {
+    list-style: none;
+    display: inline-block;
+    width: 90px;
+    height: 27px;
+    color: #f5f5f5;
+    background-color: #265663;
+    text-align: center;
+    font-size: 18px;
+}
 
-			.tableList td {
-				text-align: center;
-				vertical-align: middle;
-			}
-		
+.actv_li {
+    list-style: none;
+    display: inline-block;
+    width: 90px;
+    height: 27px;
+    color: #f5f5f5;
+    background-color: #19a187;
+    text-align: center;
+    font-size: 18px;
+}
 
-			.user__avatar--sAYSu {
-				height: 40px;
-				width: 40px;
-				border-radius: 50%;
-			}
+.tableList {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+}
 
-			.user__name--xF_ju {
-				margin-left: 10px;
-				font-weight: 700;
-				font-size: 16px;
-				color: #265663;
-			}
+.tableList td {
+    text-align: center;
+    vertical-align: middle;
+}
 
-			.avatr-image {
-				display: inline-block;
-				vertical-align: middle;
-			}
 
-			.avatr-name {
-				display: inline-block;
-			}
+.user__avatar--sAYSu {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
 
-			.ingame--OWe2B {
-				color: mediumpurple;
-				
-			}
+.user__name--xF_ju {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #265663;
+}
 
-			.sell {
-				padding: 0 5px;
-				border-radius: 3px;
-				white-space: nowrap;
+.avatr-image {
+    display: inline-block;
+    vertical-align: middle;
+}
 
-				color: #ab3e85;
-				background-color: rgb(171 62 133/25%);
-			}
+.avatr-name {
+    display: inline-block;
+}
 
-			.buy {
-				padding: 0 5px;
-				border-radius: 3px;
-				white-space: nowrap;
+.ingame--OWe2B {
+    color: mediumpurple;
 
-				color: #1c8a62;
-				background-color: rgb(171 62 133/25%);
-			}
-			.order-row__user-reputation--lGJbY{
-				color: #00a96c;
-			}
-			.price{
-				color: #ab3e85;
-			}
-			.quantity{
-				color: #617277;
-			}
+}
+
+.sell {
+    padding: 0 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+
+    color: #ab3e85;
+    background-color: rgb(171 62 133/25%);
+}
+
+.buy {
+    padding: 0 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+
+    color: #1c8a62;
+    background-color: rgb(171 62 133/25%);
+}
+
+.order-row__user-reputation--lGJbY {
+    color: #00a96c;
+}
+
+.price {
+    color: #ab3e85;
+}
+
+.quantity {
+    color: #617277;
+}
 			
 		
