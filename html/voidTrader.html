@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="UTF-8"/>
-    <link href="../css/index.css" rel="stylesheet"/>
-    <title>奸商</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<link th:href="@{/css/index.css}" rel="stylesheet" />
+		<title>奸商</title>
+	</head>
 
-<body>
-<!--
+	<body>
+		<!--
    生成图片的宽度
 -->
-<w>
-    1800
-</w>
-<div>
-    <div class="card">
-        <div class="card-layer">
-            <div>
+		<w>
+			1800
+		</w>
+		<div>
+			<div class="card">
+				<div class="card-layer">
+					<div>
+						<h1>奸商</h1>
+						<hr/>
+						<table th:if="${vo.active}"  class="voidTrader">
+							<thead>
+								<tr>
+									<th>物品名称</th>
+									<th>星币</th>
+									<th>杜卡币</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each="item:${vo.inventory}">
+									<td th:text="${item.item}"></td>
+									<td th:text="${item.credits}+'k'"></td>
+									<td th:text="${item.ducats}"></td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="voidTraderOut">
+							<caption align="top" th:if="${vo.active}">---------------------------------</caption>
+							<tr>
+								<td>虚空商人所在地：</td>
+								<td th:text="${vo.location}"></td>
+							</tr>
+							<tr>
+								<td th:text="${vo.active} ? '虚空商人 到来:' : '虚空商人 离去:'"></td>
+								<td th:text="${vo.endString}"></td>
+							</tr>
+						</table>
+					</div>
 
-                <h1>---本次奸商查询结果---</h1>
-                #table
-            </div>
+				</div>
 
-        </div>
-
-    </div>
-</div>
-</body>
+			</div>
+		</div>
+	</body>
 
 </html>

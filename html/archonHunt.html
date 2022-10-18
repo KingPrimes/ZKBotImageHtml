@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<link th:href="@{/css/index.css}" rel="stylesheet" />
+		<title>执刑官猎杀</title>
+		<style>
+		
+			.assault {
+				text-align: left;
+				font-size: 18px;
+			}
+		
+			.time {
+				text-align: right;
+				font-size: 18px;
+			}
+			table {
+				width: 100%;
+				text-align: left;
+			}
+			.head{
+				width: 100%;
+				table-layout: fixed;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<w>
+			1580
+		</w>
+		<div class="card">
+			<div class="card-layer">
+				<div class="content">
+					<table class="head">
+						<tr>
+							<td style="text-align: left; font-size: 24px;">
+								执刑官猎杀
+							</td>
+							<td th:text="${archonHunt.eta}" style="text-align: right;font-size: 20px;">
+							
+							</td>
+						</tr>
+					</table>
+				
+					<hr />
+					<table th:each="item:${archonHunt.missions}">
+						<tr>
+							<td th:text="'执刑官猎杀: '+${item.type}" style="font-size: 24px;"></td>
+						</tr>
+						<tr>
+							<td th:text="${item.node}"></td>
+						</tr>
+					</table>
+				</div>
+				
+				
+			</div>
+		</div>
+	
+		
+	</body>
+</html>

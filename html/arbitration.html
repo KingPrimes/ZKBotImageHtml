@@ -1,71 +1,56 @@
 <!DOCTYPE HTML>
-<html lang="zh">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="UTF-8"/>
-    <link href="../css/index.css" rel="stylesheet"/>
-    <title>仲裁</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<link th:href="@{/css/index.css}" rel="stylesheet" />
+		<title>仲裁</title>
+		<style>
+			h1 {
+				text-align: left;
+			}
+
+			ul {
+				width: 100;
+				text-align: left;
+				font-size: 20px;
+				list-style-type: none;
+			}
+			table{
+				width: 100%;
+				background-color: #fffefa;
+			}
+			
+		</style>
+	</head>
 
 
-<body>
-<!--
+	<body>
+		<!--
     生成图片的宽度
  -->
-<w>
-    1290
-</w>
-<div>
-    <div class="card">
-        <div class="card-layer">
-            <div class="arbitration">
+		<w>
+			1290
+		</w>
+		<div class="card ">
+			
+			<div class="card-layer">
+				<h1>仲裁</h1>
+				<hr />
+				<table>
+					<tr>
+						<td style="text-align: left;">
+							<ul>
+								<li th:text="${arbit.type}+' - '+${arbit.enemy}"></li>
+								<li th:text="${arbit.node}"></li>
+								<li th:text="${arbit.etc}"></li>
+							</ul>
+						</td>
+						<td><img th:src="@{'/img/faction/'+${arbit.enemy}+'.png'}" /></td>
+					</tr>
+				</table>
+			</div>
+		</div>
 
-                <h1>---本次仲裁查询结果---</h1>
-                <!-- 数据关键字 -->
-                <!-- #table -->
-
-                <!--自定义表格，#xxx 代表具体数据-->
-                <table class="table-s">
-                    <tbody>
-                    <tr>
-                        <td>
-                            任务地点
-                        </td>
-                        <td>
-                            #Node
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            派系
-                        </td>
-                        <td>
-                            #Ene
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            任务类型
-                        </td>
-                        <td>
-                            #Type
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            结束时间
-                        </td>
-                        <td>
-                            #End
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</body>
+	</body>
 </html>

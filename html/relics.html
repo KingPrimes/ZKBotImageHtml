@@ -1,29 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta charset="UTF-8"/>
-    <title>遗物</title>
-    <link href="../css/index.css" rel="stylesheet"/>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>遗物</title>
+		<link th:href="@{/css/index.css}" rel="stylesheet" />
+	</head>
 
-<body>
-<!--
+	<body>
+		<!--
    生成图片的宽度
 -->
-<w>
-    3072
-</w>
-<div>
-    <div class="card">
-            <div class="relics-backcolor">
-                <table class="table-css syndicate relics-color">
-                    #table
-                </table>
+		<w>
+			3072
+		</w>
+		<div>
+			<div class="card">
+				<div class="relics-backcolor">
+					<div th:if="${rs} != '0'">
+						<table class="table-css syndicate relics-color"
+						th:with="colSize=${4}, rowSize=${rs.size()/colSize}, rowSize=${(rs.size()%colSize==0 ? rowSize : (rowSize+1))}">
+							<tr 
+								th:if="${rs.size() gt 0}" 
+								th:each="rowIdx:${#numbers.sequence(1, rowSize)}">
+								
+								<td 
+									th:each="colIdx:${#numbers.sequence(1,colSize)}">
+									
+									<th:block th:with="idx=${(rowIdx-1)*colSize+colIdx-1},relics=${idx < rs.size() ? rs[idx] : null}">
+													
+													<table class="relics" th:if="${relics ne null}">
+														<caption about="top" th:classappend="'relics-'+${relics.relicsTier}"
+															th:text="'['+${relics.relicsTierD}+' '+${relics.relicsName}+'遗物]'"></caption>
+														<tr th:each="item:${relics.items}">
+															<td th:text="${item}"></td>
+														</tr>
+													</table>
+									</th:block>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div th:if="${wrs} != 0">
+						<table class="table-css syndicate relics-color"
+						th:with="colSize=${4}, rowSize=${wrs.size()/colSize}, rowSize=${(wrs.size()%colSize==0 ? rowSize : (rowSize+1))}">
+							<tr 
+								th:if="${wrs.size() gt 0}" 
+								th:each="rowIdx:${#numbers.sequence(1, rowSize)}">
+								
+								<td 
+									th:each="colIdx:${#numbers.sequence(1,colSize)}">
+									
+									<th:block th:with="idx=${(rowIdx-1)*colSize+colIdx-1},relics=${idx < wrs.size() ? wrs[idx] : null}">
+													
+													<table class="relics" th:if="${relics ne null}">
+														<caption about="top" th:classappend="'relics-'+${relics.relicsTier}"
+															th:text="'['+${relics.relicsTierD}+' '+${relics.relicsName}+'遗物]'"></caption>
+														<tr th:each="item:${relics.items}">
+															<td th:text="${item}"></td>
+														</tr>
+													</table>
+									</th:block>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
 
-            </div>
-    </div>
-</div>
-</body>
+				</div>
+			</div>
+		</div>
+	</body>
 
 </html>

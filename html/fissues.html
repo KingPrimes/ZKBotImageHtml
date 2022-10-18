@@ -1,32 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <title>裂隙</title>
-    <link href="../css/index.css" rel="stylesheet"/>
-</head>
-<body>
-<!--
-       生成图片的宽度
-    -->
-<w>
-    1800
-</w>
-<div>
-    <div class="card">
-        <div class="card-layer">
-            <div class="fissues">
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<link th:href="@{/css/index.css}" rel="stylesheet" />
+		<style>
+			hr {
+				margin: 2px;
+			}
 
-                <h1>---本次裂隙查询结果---</h1>
-                <!-- 数据关键字 -->
-                #table
+			body {
+				color: #fff;
+				background-color: #122028;
+			}
 
-                <!--自定义表格，#xxx 代表具体数据-->
-            </div>
+			table {
+				width: 100%;
+			}
 
-        </div>
+			h2 {
+				text-align: left;
+			}
+		</style>
 
-    </div>
-</div>
-</body>
+	</head>
+	<body>
+		<w>1400</w>
+		<div>
+			<div class="head-fissues">
+				虚空裂隙
+			</div>
+			<hr />
+			<div th:each="t:${fiss.T1}">
+				<div class="content">
+					<table>
+						<tr>
+							<td><img th:src="@{/img/lith.png}" /></td>
+							<td style="text-align: left;">
+								<ul>
+									<li>
+										<span class="task" th:text="${t.missionType} +'-'+ ${t.enemy}"></span>
+									</li>
+									<li>
+										<span class="fissues-type">古纪 裂隙</span>
+									</li>
+									<li th:text="${t.node}">
+
+									</li>
+									<li th:text="${t.eta}"></li>
+								</ul>
+							</td>
+							<td><img th:src="@{'/img/faction/'+${t.enemy}+'.png'}" /></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div th:each="t:${fiss.T2}">
+				<div class="content">
+					<table>
+						<tr>
+							<td><img th:src="@{/img/meso.png}" /></td>
+							<td style="text-align: left;">
+								<ul>
+									<li>
+										<span class="task" th:text="${t.missionType} +'-'+ ${t.enemy}"></span>
+									</li>
+									<li>
+										<span class="fissues-type">前纪 裂隙</span>
+									</li>
+									<li th:text="${t.node}">
+
+									</li>
+									<li th:text="${t.eta}"></li>
+								</ul>
+							</td>
+							<td><img th:src="@{'/img/faction/'+${t.enemy}+'.png'}" /></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div th:each="t:${fiss.T3}">
+				<div class="content">
+					<table>
+						<tr>
+							<td><img th:src="@{/img/neo.png}" /></td>
+							<td style="text-align: left;">
+								<ul>
+									<li>
+										<span class="task" th:text="${t.missionType} +'-'+ ${t.enemy}"></span>
+									</li>
+									<li>
+										<span class="fissues-type">中纪 裂隙</span>
+									</li>
+									<li th:text="${t.node}">
+
+									</li>
+									<li th:text="${t.eta}"></li>
+								</ul>
+							</td>
+							<td><img th:src="@{'/img/faction/'+${t.enemy}+'.png'}" /></td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+			<div th:each="t:${fiss.T4}">
+				<div class="content">
+					<table>
+						<tr>
+							<td><img th:src="@{/img/relics/axi.png}" /></td>
+							<td style="text-align: left;">
+								<ul>
+									<li>
+										<span class="task" th:text="${t.missionType} +'-'+ ${t.enemy}"></span>
+									</li>
+									<li>
+										<span class="fissues-type">后纪 裂隙</span>
+									</li>
+									<li th:text="${t.node}">
+
+									</li>
+									<li th:text="${t.eta}"></li>
+								</ul>
+							</td>
+							<td><img th:src="@{'/img/faction/'+${t.enemy}+'.png'}" /></td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+			<div th:each="t:${fiss.T5}">
+				<div class="content">
+					<table>
+						<tr>
+							<td><img th:src="@{/img/relics/Lich.png}" /></td>
+							<td style="text-align: left;">
+								<ul>
+									<li>
+										<span class="task" th:text="${t.missionType} +'-'+ ${t.enemy}"></span>
+									</li>
+									<li>
+										<span class="fissues-type">安魂 裂隙</span>
+									</li>
+									<li th:text="${t.node}">
+
+									</li>
+									<li th:text="${t.eta}"></li>
+								</ul>
+							</td>
+							<td><img th:src="@{'/img/faction/'+${t.enemy}+'.png'}" /></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
 </html>

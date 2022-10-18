@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <title>入侵</title>
-    <link href="../css/index.css" rel="stylesheet"/>
+    <link th:href="@{/css/index.css}" rel="stylesheet"/>
+	<style>
+		hr {
+			margin: 2px;
+		}
+	
+		body {
+			color: #fff;
+			background-color: #122028;
+		}
+	
+		table {
+			width: 100%;
+		}
+	
+		h2 {
+			text-align: left;
+		}
+		progress {
+			width: 100%;
+			border: 3px solid;
+		}
+		ul{
+			
+			text-align: left;
+		}
+		.invasionsReward{
+			table-layout: fixed;
+		}
+		.rewardItem{
+			color: aqua;
+			font-size: 24px;
+		}
+	</style>
 </head>
 <body>
 <!--
@@ -13,20 +46,45 @@
     1890
 </w>
 <div>
-    <div class="card">
-        <div class="card-layer">
-            <div>
+			<div class="head-fissues">
+				入侵
+			</div>
+			<hr />
+			<div >
+				<div class="content" th:each="t:${inv}">
+					<table>
+						<tr>
+							<td><img th:src="@{'/img/faction/'+${t.attacker.faction}+'.png'}" /></td>
+							<td style="text-align: left;">
+								<ul>
+									<li>
+										<span class="task" th:text="${t.node} + '('+ ${t.desc} +')'"></span>
+									</li>
+									<li>
+										<progress th:if="${t.count} > 0" th:value="${t.count}" th:max="${t.requiredRuns}"></progress>
+										<progress th:if="${t.count} < 0" th:value="${t.requiredRuns + t.count}" th:max="${t.requiredRuns}"></progress>
+									</li>
+								</ul>
+							</td>
+							<td><img th:src="@{'/img/faction/'+${t.defender.faction}+'.png'}"/></td>
+						</tr>
+						<tr>
+							<td th:text="${t.attacker.faction}+' '+${t.completion}+'%'"></td>
+							<td>
+								<table class="invasionsReward">
+									<tr>
+										<td th:text="${t.attacker.reward.countedItems.size} gt 0?${t.attackerReward.countedItems[0].type}:'-'" class="rewardItem">-</td>
+										<td></td>
+										<td th:text="${t.defender.reward.countedItems.size} gt 0?${t.defenderReward.countedItems[0].type}:'-'" class="rewardItem">-</td>
+									</tr>
+								</table>
+							</td>
+							<td th:text="100 - ${t.completion}+'% '+${t.defender.faction} "></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
 
-                <h1>---本次入侵查询结果---</h1>
-                <!-- 数据关键字 -->
-                #table
-
-                <!--自定义表格，#xxx 代表具体数据-->
-            </div>
-
-        </div>
-
-    </div>
-</div>
 </body>
 </html>

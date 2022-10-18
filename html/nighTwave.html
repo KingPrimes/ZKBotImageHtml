@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <title>电波</title>
-    <link href="../css/index.css" rel="stylesheet"/>
+    <link th:href="@{/css/index.css}" rel="stylesheet"/>
 </head>
 <body>
 <!--
@@ -17,8 +17,19 @@
         <div class="card-layer">
             <div class="nighTwave">
 
-                <h1>---本次电波查询结果---</h1>
-                #table
+                <h1>电波</h1>
+				<h3>---每日挑战---</h3>
+				<div th:each="d:${nigh.daily}">
+				<p class="day" th:text="${d.desc} + '('+${d.reputation} + ')'"></p>
+				</div>
+				<h3>---每周挑战---</h3>
+				<div th:each="w:${nigh.week}">
+					<p class="week" th:text="${w.desc} + '('+${w.reputation} + ')'"></p>
+				</div>
+				<h3>---精英挑战---</h3>
+				<div th:each="e:${nigh.elite}">
+					<p class="week" th:text="${e.desc} + '('+${e.reputation} + ')'"></p>
+				</div>
             </div>
 
         </div>

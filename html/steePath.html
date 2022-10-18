@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <title>钢铁</title>
-    <link href="../css/index.css" rel="stylesheet"/>
+    <link th:href="@{/css/index.css}" rel="stylesheet"/>
 </head>
 <body>
 <!--
@@ -17,7 +17,24 @@
         <div class="card-layer">
             <div class="steePath">
                 <h1>---本次钢铁查询结果---</h1>
-                #table
+               <table>
+				   <tr>
+					   <td>本周奖励</td>
+					   <td th:text="${stee.isReward}"></td>
+				   </tr>
+				   <tr>
+					   <td>所需精华</td>
+					   <td th:text="${stee.cost}"></td>
+				   </tr>
+				   <tr>
+					   <td>剩余时间</td>
+					   <td th:text="${stee.etc}"></td>
+				   </tr>
+				   <tr>
+					   <td>下次奖励</td>
+					   <td th:text="${stee.nexReward}"></td>
+				   </tr>
+			   </table>
             </div>
 
         </div>

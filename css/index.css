@@ -11,7 +11,6 @@ html {
 }
 
 h1 {
-    text-indent: 25px;
     font-weight: bold;
     align-items: center;
 }
@@ -133,6 +132,7 @@ td {
     border-radius: 20px;
     border: 10px double #555;
     margin: 10px;
+	background-color: #fffefa;
 }
 
 .card-layer div {
@@ -228,6 +228,12 @@ td {
 
 .tra tr:nth-child(even) {
     background: #F5FAFA;
+}
+
+.foot-by{
+	width: 100%;
+	bottom: 0;
+	text-align: center;
 }
 
 .market td:nth-child(3) {
@@ -448,4 +454,43 @@ td {
     margin: 10px;
     background-color: #61649f;
 }
+.container {
+				width: 100%;
+				display: flex;
+			}
 
+			.mid-group {
+				flex: 1;
+				text-align: left;
+			}
+
+			.foot {
+				width: 100%;
+				bottom: 0;
+				text-align: center;
+			}
+
+			ul {
+				list-style-type: none;
+			}
+
+			.content {
+				border: 2px solid #fff;
+				margin: 15px;
+				background-color: #0A0F10;
+			}
+
+			.task {
+				text-align: left;
+				font-size: 24px;
+			}
+
+			.fissues-type {
+				text-align: left;
+				font-size: 20px;
+			}
+
+			.head-fissues {
+				text-align: left;
+				font-size: 24px;
+			}
