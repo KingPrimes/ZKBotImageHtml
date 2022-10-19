@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-      <img src=".github/image/ico.jpg" width="30%">
+      <img src="https://github.com/KingPrimes/ZeroKingBot/blob/main/.github/image/ico.jpg" width="30%">
 </p>
 
 # ZeroKingBot
