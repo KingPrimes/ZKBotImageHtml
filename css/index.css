@@ -4,6 +4,7 @@ html {
     font-family: 'Source', Fallback,sans-serif;
     word-spacing: 5px;
     text-align: center;
+	background-color: white;
 }
 @font-face {
     font-family: 'Source';

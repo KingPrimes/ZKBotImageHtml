@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-   <img src=".github/image/ico.jpg" width="200" height="200" alt="非常感谢 `别哭草莓菠菜^ ^ 微信号：Xwenlilililili_` 绘制的图像" title="非常感谢 `别哭草莓菠菜^ ^ 微信号：Xwenlilililili_` 绘制的图像">
+      <img src=".github/image/ico.jpg" width="30%">
 </p>
 
 # ZeroKingBot
