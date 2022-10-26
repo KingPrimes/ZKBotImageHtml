@@ -49,7 +49,7 @@
 				</tr>
 				<tr>
 					<td th:text="${earth.isDay} ? '白天' : '夜晚'" th:classappend="${earth.isDay} ? 'warm' : 'cold'"></td>
-					<td th:text="${cetus.isDay} ? '白天' : '夜晚'" th:classappend="${earth.isDay} ? 'warm' : 'cold'"></td>
+					<td th:text="${cetus.isDay} ? '白天' : '夜晚'" th:classappend="${cetus.isDay} ? 'warm' : 'cold'"></td>
 					<td th:text="${vallis.isWarm}? '温暖' : '寒冷'" th:classappend="${vallis.isWarm} ? 'warm' : 'cold'"></td>
 					<td th:text="${cambion.active}" th:classappend="${cambion.active} == 'FASS'? 'warm' : 'cold'"></td>
 					<td th:text="${zariman.isCorpus} ? 'CORPUS' : ${zariman.state}" th:classappend="${zariman.isCorpus} ? 'cold' : 'warm'"></td>
