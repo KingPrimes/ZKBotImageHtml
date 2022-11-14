@@ -43,8 +43,8 @@
 								<td th:text="${vo.location}"></td>
 							</tr>
 							<tr>
-								<td th:text="${vo.active} ? '虚空商人 到来:' : '虚空商人 离去:'"></td>
-								<td th:text="${vo.endString}"></td>
+								<td th:text="${!vo.active} ? '虚空商人 到来:' : '虚空商人 离去:'"></td>
+								<td th:text="${!vo.active} ? ${vo.startString}:${vo.endString}"></td>
 							</tr>
 						</table>
 					</div>

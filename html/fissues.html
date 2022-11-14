@@ -27,7 +27,7 @@
 		<w>1400</w>
 		<div>
 			<div class="head-fissues">
-				虚空裂隙
+				<span th:text="${type == 0 ? '虚空裂隙' : (type == 1 ? '九重天裂隙' : (type == 2 ? '钢铁裂隙' : '')) }"></span>
 			</div>
 			<hr />
 			<div th:each="t:${fiss.T1}">
