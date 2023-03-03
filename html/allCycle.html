@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh" xmlns:th="http://www.thymeleaf.org">
-	<head>
-		<meta charset="UTF-8" />
-		<link th:href="@{/css/index.css}" rel="stylesheet" />
-		<title>平原</title>
-		<style>
+<head>
+    <meta charset="UTF-8"/>
+    <link th:href="@{/css/index.css}" rel="stylesheet"/>
+    <title>平原</title>
+    <style>
 			h1 {
 				text-align: center;
 			}
@@ -26,61 +26,62 @@
 			.cold{
 				color: #4077e8;
 			}
-		</style>
-	</head>
 
-	<body >
-		<!-- 图片的宽度 按像素计算 -->
-		<w>2600</w>
+
+    </style>
+</head>
+
+<body>
+<!-- 图片的宽度 按像素计算 -->
+<w>2600</w>
 
 <div class="card">
-	<h1>平原查询结果</h1>
-	<div class="card-layer">
-		
-		<div>
-		<div class="content">
-			<table>
-				<tr>
-					<td>地球</td>
-					<td>夜灵平野</td>
-					<td>福尔图娜</td>
-					<td>魔胎之境</td>
-					<td>扎里曼</td>
-				</tr>
-				<tr>
-					<td th:text="${earth.isDay} ? '白天' : '夜晚'" th:classappend="${earth.isDay} ? 'warm' : 'cold'"></td>
-					<td th:text="${cetus.isDay} ? '白天' : '夜晚'" th:classappend="${cetus.isDay} ? 'warm' : 'cold'"></td>
-					<td th:text="${vallis.isWarm}? '温暖' : '寒冷'" th:classappend="${vallis.isWarm} ? 'warm' : 'cold'"></td>
-					<td th:text="${cambion.active}" th:classappend="${cambion.active} == 'FASS'? 'warm' : 'cold'"></td>
-					<td th:text="${zariman.isCorpus} ? 'CORPUS' : ${zariman.state}" th:classappend="${zariman.isCorpus} ? 'cold' : 'warm'"></td>
-				</tr>
-				<tr>
-					<td><img th:src="${earth.isDay} ? @{/img/day.png} : @{/img/night.png}" /></td>
-					<td><img th:src="${cetus.isDay} ? @{/img/day.png} : @{/img/night.png}" /></td>
-					<td><img th:src="${vallis.isWarm} ? @{/img/day.png} : @{/img/cold.png}" /></td>
-					<td><img th:if="${cambion.active} == FASS" th:src="@{/img/day.png}" />
-						<img th:if="${cambion.active} != FASS" th:src="@{/img/night.png}" />
-					</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td th:text="${earth.timeLeft}"></td>
-					<td th:text="${cetus.timeLeft}"></td>
-					<td th:text="${vallis.timeLeft}"></td>
-					<td th:text="${cambion.timeLeft}"></td>
-					<td th:text="${zariman.timeLeft}"></td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	</div>
+    <h1>平原查询结果</h1>
+    <div class="card-layer">
+
+        <div>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>地球</td>
+                        <td>夜灵平野</td>
+                        <td>福尔图娜</td>
+                        <td>魔胎之境</td>
+                        <td>扎里曼</td>
+                    </tr>
+                    <tr>
+                        <td th:text="${earth.isDay} ? '白天' : '夜晚'"
+                            th:classappend="${earth.isDay} ? 'warm' : 'cold'"></td>
+                        <td th:text="${cetus.isDay} ? '白天' : '夜晚'"
+                            th:classappend="${cetus.isDay} ? 'warm' : 'cold'"></td>
+                        <td th:text="${vallis.isWarm}? '温暖' : '寒冷'"
+                            th:classappend="${vallis.isWarm} ? 'warm' : 'cold'"></td>
+                        <td th:text="${cambion.active}"
+                            th:classappend="${cambion.active} == 'FASS'? 'warm' : 'cold'"></td>
+                        <td th:text="${zariman.isCorpus} ? 'CORPUS' : ${zariman.state}"
+                            th:classappend="${zariman.isCorpus} ? 'cold' : 'warm'"></td>
+                    </tr>
+                    <tr>
+                        <td><img th:src="${earth.isDay} ? @{/img/day.png} : @{/img/night.png}"/></td>
+                        <td><img th:src="${cetus.isDay} ? @{/img/day.png} : @{/img/night.png}"/></td>
+                        <td><img th:src="${vallis.isWarm} ? @{/img/day.png} : @{/img/cold.png}"/></td>
+                        <td><img th:if="${cambion.active} == FASS" th:src="@{/img/day.png}"/>
+                            <img th:if="${cambion.active} != FASS" th:src="@{/img/night.png}"/>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td th:text="${earth.timeLeft}"></td>
+                        <td th:text="${cetus.timeLeft}"></td>
+                        <td th:text="${vallis.timeLeft}"></td>
+                        <td th:text="${cambion.timeLeft}"></td>
+                        <td th:text="${zariman.timeLeft}"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
-
-		
-
-
-
-
-	</body>
+</body>
 
 </html>

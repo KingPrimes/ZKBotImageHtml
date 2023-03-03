@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link th:href="@{/css/index.css}" rel="stylesheet"/>
+    <title>紫卡分析</title>
+    <style>
+        .weapons_name {
+            color: #660099;
+        }
+        .trend_old {
+            color: #660033;
+        }
+        .trend {
+            color: #999933;
+        }
+        .weapons_type {
+            color: #CC3366;
+        }
+        .attribute{
+            color: #663366;
+        }
+        html{
+            background-color: #FFFFCC;
+            text-align: center;
+        }
+        p{
+            color: #666666;
+        }
+
+    </style>
+</head>
+<body>
+<w>1500</w>
+<div th:each="tm:${tms}">
+
+    <h3 th:text="${tm.rivenName ==null} ? ${tm.weaponName} : ${tm.weaponName+tm.rivenName}" class="weapons_name"></h3>
+    <p>
+        倾向：
+        <span th:text="${tm.newDot + '('+ tm.newNum + ')' }" class="trend"></span>
+    </p>
+
+    <p>此前版本倾向：<span th:text="${tm.oldDot + '('+ tm.oldNum + ')' }" class="trend_old"></span></p>
+    <p>武器类型：<span th:text="${tm.weaponType}" class="weapons_type"></span></p>
+    <p>具体分析结果：</p>
+    <div th:each="ta:${tm.attributes}">
+        <p class="attribute">
+            <span th:text="${ta.attr+'% '+ta.name}"></span>
+            <span th:text="${ta.highAttrDiff == null || ta.highAttrDiff == ''} ? ${ '('+ ta.lowAttr + '% - ' + ta.highAttr+ '% | 低 ' + ta.lowAttrDiff + '% )'}"></span>
+            <span th:text="${ta.lowAttrDiff == null || ta.lowAttrDiff == ''} ? ${ '(' + ta.lowAttr + '% - ' + ta.highAttr + '% | 高 '+ ta.highAttrDiff +'% )'}"></span>
+        </p>
+    </div>
+</div>
+</body>
+</html>

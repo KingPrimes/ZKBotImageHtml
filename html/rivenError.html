@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link th:href="@{/css/index.css}" rel="stylesheet"/>
+    <title>紫卡分析错误</title>
+    <style>
+        p {
+            color: red;
+        }
+         html {
+            background-color: #FFFFCC;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<w>800</w>
+<div>
+    <p th:utext="${msg}"></p>
+    <img th:src="@{/img/riven/error.png}"/>
+</div>
+</body>
+</html>
