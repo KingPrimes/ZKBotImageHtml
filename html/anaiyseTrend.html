@@ -6,26 +6,28 @@
     <title>紫卡分析</title>
     <style>
         .weapons_name {
-            color: #660099;
+            color: #CC99CC;
         }
         .trend_old {
-            color: #660033;
+            color: #FFFFCC;
         }
         .trend {
-            color: #999933;
+            color: #FFFF66;
         }
         .weapons_type {
             color: #CC3366;
         }
         .attribute{
-            color: #663366;
+            color: #FF9933;
         }
         html{
-            background-color: #FFFFCC;
+            background-color: #4D3D54;
             text-align: center;
+            font-family: 'Source', Fallback, sans-serif;
+            font-size: 16px
         }
         p{
-            color: #666666;
+            color: #CC9966;
         }
 
     </style>
@@ -34,7 +36,7 @@
 <w>1500</w>
 <div th:each="tm:${tms}">
 
-    <h3 th:text="${tm.rivenName ==null} ? ${tm.weaponName} : ${tm.weaponName+tm.rivenName}" class="weapons_name"></h3>
+    <h3 th:text="${tm.rivenName ==null} ? ${tm.weaponName} : ${tm.weaponName+' ('+tm.rivenName+')'}" class="weapons_name"></h3>
     <p>
         倾向：
         <span th:text="${tm.newDot + '('+ tm.newNum + ')' }" class="trend"></span>
